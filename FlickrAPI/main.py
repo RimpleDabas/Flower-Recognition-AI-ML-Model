@@ -3,7 +3,7 @@ from downloader import download_images
 import os
 import time
 
-#all_flowers = ['Rose' , ' orchid' , ' bougainvillea' , ' hibiscus' , 'sunflower']
+#all_flowers = ['rose' , ' orchid' , ' bougainvillea' , ' hibiscus' , 'sunflower']
 all_flowers = ['tulip' , 'hydrangea', 'dahlia', 'foxglove', 'daffodil']
 images_per_flower = 200
 
