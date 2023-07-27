@@ -11,7 +11,11 @@ This step involved getting rid of junk images such as drawings, flowers tyagged 
 
 ## Model Training and testing
 
+<<<<<<< Updated upstream
 As part of preprocessing step we rescaled, resized and labeled our data.We used tensorflow and Keras for training our model.We stared with different combinations of Convolutional, pooling, flatten and dense layers to train our models. The files for which are located in [Model 1](https://github.com/joshi-swetam/Flower-Recognition-AI-ML-Model/tree/main/Model%201), [Model 2](https://github.com/joshi-swetam/Flower-Recognition-AI-ML-Model/tree/main/Model%202) and [Model 3](https://github.com/joshi-swetam/Flower-Recognition-AI-ML-Model/tree/main/Model%203) folders. We tried building layers with different optimizers and activations functions. Augmentation and dropout were done as needed. We also tried transfer leaning models but they were computaionally more expensive and time consuming. The best accuracy we could reach was   and model for the same can be located here.
+=======
+As part of preprocessing step we rescaled, resized and labeled our data.We used tensorflow and Keras for training our model.We started with different combinations of Convolutional, pooling, flatten and dense layers to train our models. The files for which are located here. . We tried building layers with different optimizers and activation functions. Augmentation and dropout were done as needed. We also tried transfer leaning models but they were computaionally more expensive and time consuming. The best accuracy we could reach was   and model for the same can be located here.
+>>>>>>> Stashed changes
 
 We quantified our model using confusion matrix and classification report.After saving the model we made predictions using prediction dataset. 
 
