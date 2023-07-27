@@ -8,15 +8,14 @@ import cv2
 app = Flask(__name__)
 
 model = load_model('final-model-256.h5')
+@app.route("/")
 
-def predict_label(image_path):
-	image = cv2.imread(image_path, cv2.IMREAD_COLOR)
+def predict_label(img_path):
+	image = cv2.imread(img_path, cv2.IMREAD_COLOR)
 	image = cv2.resize(image, (256, 256))
 	image = img_to_array(image)
 	image = np.expand_dims(image,axis=0)
-	result =  model.predict(image)
-	array = result[0]
-	answer = np.argmax(array)
+	answer = np.argmax(model.predict(image),axis=1)[0]
 	if  answer == 0:
 		print("Label: Bougainvillea")
 	elif answer == 1:
@@ -50,10 +49,10 @@ def main():
 def get_output():
 	if request.method == 'POST':
 		img = request.files['my_image']
-		image_path = "static/" + img.filename	
-		img.save(image_path)
-		p = predict_label(image_path)
-	return render_template("index.html", prediction = p, img_path = image_path)
+		img_path = "static/" + img.filename	
+		img.save(img_path)
+		p = predict_label(img_path)
+	return render_template("index.html", prediction = p, img_path = img_path)
 
 if __name__ =='__main__':
 	#app.debug = True
