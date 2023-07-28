@@ -32,7 +32,7 @@ As part of preprocessing step we rescaled, resized and labeled our data.We then 
 We quantified our model using confusion matrix and classification report.After saving the model we made predictions using prediction dataset. 
 ![image](/Images/Picture1.jpg)
 
-As confusion matrix depicts the accuracy of our model is 79% although the precision differs for flowers. It performs well with sunflowers and foxglove but not so well in predicting flowers.
+As classification report depicts the accuracy of our model is 79% although the precision differs for flowers. It performs well with sunflowers and foxglove but not so well in predicting flowers.
 
 ## Flask App
 We then made flask based app to upload the image and make predictions. The files for the same can be located [here](https://github.com/joshi-swetam/Flower-Recognition-AI-ML-Model/tree/main/Flask%20App)
