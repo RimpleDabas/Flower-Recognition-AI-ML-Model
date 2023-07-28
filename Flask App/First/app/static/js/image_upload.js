@@ -23,6 +23,7 @@ $(function () {
     SHOW UPLOADED IMAGE NAME
 * ========================================== */
 var input = document.getElementById('upload');
+var tryagain = document.getElementById('btn-tryagain');
 var infoArea = document.getElementById('upload-label');
 
 function showFileName(event) {
@@ -31,4 +32,38 @@ function showFileName(event) {
     infoArea.textContent = 'File name: ' + fileName;
   }
 
-input.addEventListener('change', showFileName);
+if(tryagain) {
+    $('#btn-tryagain').hide();
+}
+
+if(input) {
+    input.addEventListener('change', showFileName);
+}
+
+$(function () {
+    $('#btn-correct').on('click', function () {
+        $('#img-thinking')
+                .attr('src', "static/images/happy.png");
+        $('#btn-correct').hide();
+        $('#btn-incorrect').hide();
+        $("#btn-tryagain").prop("value", "Yay!!! Want to try one more?");
+        $('#btn-tryagain').show();
+    });
+});
+
+$(function () {
+    $('#btn-incorrect').on('click', function () {
+        $('#img-thinking')
+                .attr('src', "static/images/sad.png");
+        $('#btn-correct').hide();
+        $('#btn-incorrect').hide();
+        $("#btn-tryagain").prop("value", "Oops!!! Want to try again?");
+        $('#btn-tryagain').show();
+    });
+});
+
+$(function () {
+    $('#btn-tryagain').on('click', function () {
+        $(location).attr('href', "/");
+    });
+});

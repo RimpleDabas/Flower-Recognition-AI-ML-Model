@@ -32,7 +32,7 @@ def predict_image_file():
             img_data = preprocess_img()
             pred_digits = predict_result(img_data)
             label_digit = str(pred_digits[0])
-            return render_template("result.html", predictions=dict[label_digit])
+            return render_template("result.html", predictions=dict[label_digit].capitalize())
 
     except Exception:
         error = "File cannot be processed."
