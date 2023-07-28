@@ -10,14 +10,14 @@
 }
 
 .image-area {
-    border: 2px dashed rgba(255, 255, 255, 0.7);
+    border: 2px dashed #2d2a3c;
     padding: 4rem;
     position: relative;
 }
 
 .image-area::before {
     content: 'Image Preview';
-    color: #fff;
+    color: #2d2a3c;
     font-weight: bold;
     text-transform: uppercase;
     position: absolute;
@@ -37,6 +37,8 @@
 
 body {
     min-height: 100vh;
-    background-color: #757f9a;
-    background-image: linear-gradient(147deg, #9b5de5 0%, #f15bb5 100%);
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
