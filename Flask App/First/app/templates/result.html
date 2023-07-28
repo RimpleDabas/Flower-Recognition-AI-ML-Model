@@ -5,16 +5,14 @@ Prediction - Flower Recognition
 
 {% block content %}
 <div class="container py-5">
-
     <header class="text-white text-center">
-        <h1 class="display-4">Flower Recognition</h1>
-        <p class="lead mb-5">You will see the prediction of the input image.</p>
-    </header>
-
-    <header class="text-white text-center">
-        <h1 class="display-5">Prediction</h1>
         {% if predictions %}
-        <h2 class="display-4 text-dark font-weight-bold">{{predictions}}</h2>
+        <h2 class="display-4 text-dark font-weight-bold">That looks like a </h2><h1>{{predictions}}..</h1>
+        <input class="btn btn-primary my-3" id="btn-correct" type="button" value="That's Correct!"/>&nbsp;
+        <input class="btn btn-primary my-3" id="btn-incorrect" type="button" value="I don't think so"/>
+        <input class="btn btn-primary my-3" id="btn-tryagain" type="button" value=""/>
+        <br />
+        <img id="img-thinking" src="static/images/thinking.png" />
         {% else %}
         <h2 class="display-4 text-dark font-weight-bold">{{err}}</h2>
         {% endif %}
