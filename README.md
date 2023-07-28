@@ -48,4 +48,5 @@ We then made flask based app to upload the image and make predictions. The files
 - https://medium.com/@draj0718/convolutional-neural-networks-cnn-architectures-explained-716fb197b243
 - https://medium.com/@adrianmrit/creating-simple-image-datasets-with-flickr-api-2f19c164d82f
 - https://pixabay.com/api/docs/#api_search_images
+- https://medium.com/@ferrygunawan/create-flower-image-classification-with-tensorflow-keras-and-flask-4fd6efd4c5ac
 
