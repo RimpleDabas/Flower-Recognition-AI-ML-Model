@@ -29,11 +29,11 @@ This step involved getting rid of junk images such as drawings, flowers tagged i
 
 As part of preprocessing step we rescaled, resized and labeled our data.We then converted our images and labels as .npy files for ease of storing and using them in models. The files can be located [here](https://github.com/joshi-swetam/Flower-Recognition-AI-ML-Model/tree/main/Models/dataset). We used tensorflow and Keras for training our model. We stared with different combinations of Convolutional and pooling layers for feature extractions.The clasiffication layers were combinations of flatten ,dense and dropout layers. We tried building layers with different optimizers and activations functions. We also tried transfer leaning models but they were computaionally more expensive and time consuming. The best accuracy we could reach was 79 percent.All our ipynb files and .h5 saved models can be referred [here](https://github.com/joshi-swetam/Flower-Recognition-AI-ML-Model/tree/main/Models)
 
-We quantified our model using confusion matrix and classification report.After saving the model we made predictions using prediction dataset. 
+We quantified our model using confusion matrix and classification report.After saving the model we made predictions using prediction dataset.
 ![image](/Images/Picture_79.png)
 
-As classification report depicts the accuracy of our model is 79% although the precision differs for flowers. It performs well with sunflowers and Bougainvillea but not so well in predicting Hyrangea.Another thing we noticed that significant numbere of daffodils were being classified as sunflowers.
-If we look at the confusion matrix and classification report for the 76% accuracy below it performs well in predicting foxgllove as well as Daffodils in comparison to the model with 79 percent accuracy. 
+As classification report depicts the accuracy of our model is 79% although the precision differs for flowers. It performs well with sunflowers and bougainvillea but not so well in predicting hyrangea and rose. Another thing we noticed that significant number of daffodils were being classified as sunflowers.
+If we look at the confusion matrix and classification report for the 76% accuracy below it performs well in predicting rose as well as Daffodils in comparison to the model with 79% accuracy. 
 ![Image](/Images/Picture_76.png)
 
 ## Flask App
@@ -49,4 +49,3 @@ We then made flask based app to upload the image and make predictions. The files
 - https://medium.com/@adrianmrit/creating-simple-image-datasets-with-flickr-api-2f19c164d82f
 - https://pixabay.com/api/docs/#api_search_images
 - https://medium.com/@ferrygunawan/create-flower-image-classification-with-tensorflow-keras-and-flask-4fd6efd4c5ac
-
