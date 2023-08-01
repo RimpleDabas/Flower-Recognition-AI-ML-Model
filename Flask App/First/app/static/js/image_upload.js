@@ -57,7 +57,7 @@ $(function () {
                 .attr('src', "static/images/sad.png");
         $('#btn-correct').hide();
         $('#btn-incorrect').hide();
-        $("#btn-tryagain").prop("value", "Oops!!! Want to try again?");
+        $("#btn-tryagain").prop("value", "Sorry, I'm not trained enough yet.Let's Try another one!");
         $('#btn-tryagain').show();
     });
 });
