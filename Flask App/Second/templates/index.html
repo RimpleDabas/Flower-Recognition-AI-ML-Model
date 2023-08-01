@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Image Classification</title>
+  <title>Flower Classification</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,7 +18,10 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Upload Your Image :</label>
       <div class="col-sm-10">          
-        <input type="file" class="form-control" placeholder="Hours Studied"  name="my_image" id="pwd">
+        <input type="file" class="form-control" placeholder="Image upload"  name="my_image" id="pwd">
+        
+        <!-- <button class = "btn Correct">Correct</button> -->
+        <!-- <button class = "btn not-Correct"> Not Correct</button> -->
       </div>
     </div>
 
@@ -31,8 +34,39 @@
 
 	{% if prediction %}
   <img src="{{img_path}}" height="400px" width="400px">
-	<h2> Your Prediction   : <i> {{prediction}} </i></h2>
-
+	<h2> It's  : <i> {{prediction}} </i></h2>
+  <!-- <button id = "btn Correct">Correct</button>
+  <button class = "btn Correct">Correct</button>
+  <button id = "btn Wrong" >Wrong</button> -->
+  <body>
+    <button id="btn-Correct">Correct</button>
+    <button id = "btn-Wrong" >Wrong</button>
+    <div id="popupContainer"></div>
+  </body>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #popupContainer {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      background-color: #f6bfbf;
+      border: 1px solid #160e0e;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
+  </style>
+  
+    <script src="{{url_for('static', filename='js/app.js')}}"></script> 
 	{% endif %}
 
 </div>
