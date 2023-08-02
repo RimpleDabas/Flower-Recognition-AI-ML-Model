@@ -1,0 +1,7 @@
+body {
+    min-height: 100vh;
+    background-image: url("/static/Images/photo-1465146344425-f00d5f5c8f07.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
