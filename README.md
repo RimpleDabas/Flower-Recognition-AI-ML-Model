@@ -1,6 +1,6 @@
 # Flower-Recognition Model
 ![image](/Images/Dashboard_1.png)
-In this project we aimed to train Convolutional Neural Network(CNN) for flower recognizion and built a flask based app for it. Our app allows users to upload an image and predictions.We currently have model for the following ten flowers.
+In this project we aimed to train Convolutional Neural Network(CNN) for flower recognizion and built a flask based app for it. Our app allows users to upload an image and make predictions.Our app currently predicts following ten flowers.
  - Bougainvillea 
  - Daffodil
  - Dahlia
@@ -12,11 +12,14 @@ In this project we aimed to train Convolutional Neural Network(CNN) for flower r
  - Sunflower
  - Tulip
 
-App predicts the flower as shown below
+The results is predicted as shown below
+
 ![gif](/Images/Dashboard.gif)
 
-It further allows the user to give an input and allows to upload another image.
+It further allows the user to give an input and to upload another image.
 ![](/Images/Dashboard_4.png)
+
+Following are the steps we followed for making this app.
 ## Data collection
 The data for testing and training our model was collected from three sources
  - Web scraping from Google Images
