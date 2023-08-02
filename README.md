@@ -49,9 +49,3 @@ We then made flask based app to upload the image and make predictions. The files
  - Our dataset was limited. We had approx 300 images per category. Having more images would have allowed for better accuracy.
  - Training models was time consuming and that limited us for conducting more trails.
  - We did not try pre processing steps such as edge detection and enhancement which could have allowed us to get better accuracy.
-
- ## References
-- https://medium.com/@draj0718/convolutional-neural-networks-cnn-architectures-explained-716fb197b243
-- https://medium.com/@adrianmrit/creating-simple-image-datasets-with-flickr-api-2f19c164d82f
-- https://pixabay.com/api/docs/#api_search_images
-- https://medium.com/@ferrygunawan/create-flower-image-classification-with-tensorflow-keras-and-flask-4fd6efd4c5ac
