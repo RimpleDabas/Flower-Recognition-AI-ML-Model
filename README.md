@@ -28,7 +28,7 @@ The data for testing and training our model was collected from three sources
 Codes for these files are in the folders based on their names. 
 
 ## Data Cleaning 
-This step involved getting rid of junk images such as drawings, flowers tagged in wrong categories etc. This was done manually. After cleaning we arranged flowers folderwise so as to use them for labeling in the preprocessing steps. The combined data is located [here](https://github.com/joshi-swetam/Flower-Recognition-AI-ML-Model/tree/main/Combined%20flowers)
+This step involved getting rid of junk images such as drawings, flowers tagged in wrong categories etc. This was done manually. After cleaning we arranged flowers folderwise so as to use them for labeling in the preprocessing steps. The combined data is located [here](https://github.com/joshi-swetam/Flower-Recognition-AI-ML-Model/tree/main/Flowers%20Dataset)
 
 
 ## Model Training and testing
@@ -49,3 +49,6 @@ We then made flask based app to upload the image and make predictions. The files
  - Our dataset was limited. We had approx 300 images per category. Having more images would have allowed for better accuracy.
  - Training models was time consuming and that limited us for conducting more trails.
  - We did not try pre processing steps such as edge detection and enhancement which could have allowed us to get better accuracy.
+
+## Future Work
+We plan to add more categories for our classification. Additionaly we want to add facts about the flower being uploaded for recognizion.
